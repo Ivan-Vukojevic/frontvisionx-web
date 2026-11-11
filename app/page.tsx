@@ -1,34 +1,20 @@
-﻿export default function Page() {
+export default function HomePage() {
   return (
     <main
       style={{
         minHeight: "100vh",
-        display: "flex",
-        alignItems: "center",
-        justifyContent: "center",
-        padding: "24px",
+        display: "grid",
+        placeItems: "center",
+        margin: 0,
         textAlign: "center",
-        background: "#ffffff",
-        color: "#111111",
-        fontFamily:
-          "Inter, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif",
       }}
     >
-      <section>
-        <h1
-          style={{
-            margin: 0,
-            fontSize: "clamp(2rem, 6vw, 4rem)",
-            fontWeight: 700,
-            letterSpacing: "0.06em",
-          }}
-        >
-          FRONTVISIONX
-        </h1>
-        <p style={{ marginTop: 12, marginBottom: 0, fontSize: "1.1rem", opacity: 0.8 }}>
+      <div>
+        <h1 style={{ margin: 0, fontSize: "2rem" }}>FRONTVISIONX</h1>
+        <p style={{ marginTop: "0.75rem", fontSize: "1.1rem" }}>
           Coming Soon...
         </p>
-      </section>
+      </div>
     </main>
   );
 }

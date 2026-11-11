@@ -1,14 +1,22 @@
-﻿import type { ReactNode } from "react";
+import type { Metadata } from "next";
+import "./globals.css";
 
-export const metadata = {
+export const metadata: Metadata = {
   title: "FRONTVISIONX",
-  description: "Coming Soon",
+  description: "Coming Soon...",
+  verification: {
+    google: "pRsm_rd5v4K0iWEcESj0oUicgH_4e9QUmbIcoYPIeRI",
+  },
 };
 
-export default function RootLayout({ children }: { children: ReactNode }) {
+export default function RootLayout({
+  children,
+}: Readonly<{
+  children: React.ReactNode;
+}>) {
   return (
-    <html lang="hr">
-      <body style={{ margin: 0 }}>{children}</body>
+    <html lang="en">
+      <body>{children}</body>
     </html>
   );
 }
