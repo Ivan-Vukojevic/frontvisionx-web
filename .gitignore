@@ -1,0 +1,16 @@
+# Ignore everything by default
+*
+
+# Keep only the required project files
+!/.gitignore
+!/package.json
+!/app/
+!/app/layout.tsx
+!/app/page.tsx
+
+# Common ignores
+node_modules/
+.next/
+out/
+.vercel/
+*.log
